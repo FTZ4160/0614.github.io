@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 背景圆形（暖橙色渐变） -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E67E22;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF8DC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE4B5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景圆 -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGrad)"/>
+  
+  <!-- 鸽子身体 -->
+  <ellipse cx="260" cy="250" rx="95" ry="75" fill="url(#bodyGrad)" transform="rotate(-15 260 250)"/>
+  
+  <!-- 鸽子头 -->
+  <circle cx="330" cy="195" r="45" fill="url(#bodyGrad)"/>
+  
+  <!-- 鸽子翅膀（后） -->
+  <ellipse cx="220" cy="240" rx="55" ry="35" fill="url(#wingGrad)" transform="rotate(-30 220 240)"/>
+  
+  <!-- 鸽子翅膀（前） -->
+  <ellipse cx="240" cy="260" rx="60" ry="38" fill="url(#wingGrad)" transform="rotate(-20 240 260)"/>
+  
+  <!-- 鸽子尾巴 -->
+  <path d="M165 260 Q140 280 150 310 Q175 295 180 275 Z" fill="url(#bodyGrad)"/>
+  
+  <!-- 喙 -->
+  <path d="M365 185 L395 180 L365 200 Z" fill="#FFD700" stroke="#DAA520" stroke-width="2"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="345" cy="182" r="10" fill="#8B4513"/>
+  <circle cx="348" cy="179" r="3" fill="white"/>
+  
+  <!-- 信件 -->
+  <rect x="220" y="300" width="90" height="60" rx="4" fill="#FFD700" stroke="#D2691E" stroke-width="3"/>
+  <path d="M220 300 L265 330 L310 300" stroke="#D2691E" stroke-width="3" fill="none"/>
+  
+  <!-- 信件封蜡印章 -->
+  <circle cx="265" cy="330" r="10" fill="#E74C3C"/>
+  <text x="265" y="335" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="bold" font-family="serif">飞</text>
+  
+  <!-- 脚 -->
+  <path d="M270 315 L268 340 L260 345 M272 315 L275 338 L282 343" 
+        stroke="#FFA500" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
